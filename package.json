@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/water-alchemists/swale-client#readme",
   "dependencies": {
-    "express": "^4.14.0",
     "superagent": "^2.3.0"
   }
 }
