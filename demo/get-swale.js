@@ -1,5 +1,11 @@
 'use strict';
-const swale = require('../modules/swale');
+const config = require('../config'),
+    SwaleApi = require('../modules/SwaleApi');
+
+const swaleConfig = {
+        route : config.SWALE.route
+    },
+    swale = new SwaleApi(swaleConfig);
 
 swale.get()
     .then(data => console.log('got data :', data))

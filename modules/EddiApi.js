@@ -12,7 +12,7 @@ class EddiApi {
         const route = this.config.route;
 
         return new Promise((resolve, reject) => {
-            request.get(`${route}/`)
+            request.get(`${route}/api/eddi/${id}`)
                 .set('Accept', 'application/json')
                 .then(resolve, reject);
         });
